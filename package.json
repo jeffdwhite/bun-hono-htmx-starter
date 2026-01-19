@@ -1,0 +1,19 @@
+{
+  "name": "bun-hono-htmx-starter",
+  "version": "1.0.0",
+  "description": "A starter template for Bun + Hono + HTMX documentation web apps",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/app/server.ts",
+    "start": "bun src/app/server.ts",
+    "db:init": "bun src/lib/server/db/seed.ts"
+  },
+  "dependencies": {
+    "hono": "^4.6.0",
+    "@hono/zod-validator": "^0.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

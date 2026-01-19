@@ -1,0 +1,23 @@
+<h1>HTMX Integration</h1>
+<p>HTMX enables rich interactions without writing JavaScript.</p>
+
+<h2>Common Patterns</h2>
+
+<h3>Debounced Search</h3>
+<pre><code>&lt;input
+  hx-get="/search"
+  hx-trigger="keyup changed delay:300ms"
+  hx-target="#results"
+/&gt;</code></pre>
+
+<h3>Form Submission</h3>
+<pre><code>&lt;form
+  hx-post="/items"
+  hx-target="#content"
+&gt;</code></pre>
+
+<h2>Partial vs Full Page</h2>
+<p>
+  Use <code>renderResponse()</code> to detect HTMX requests and return partials
+  or full pages.
+</p>

@@ -1,0 +1,21 @@
+<h1>Routing</h1>
+<p>Routes are defined centrally and mounted as sub-apps.</p>
+
+<h2>Route Definition Pattern</h2>
+<pre><code>export const featureRoutes = {
+  paths: {
+    list: () =&gt; "/items",
+    item: (id: string) =&gt; `/items/${id}`,
+  },
+  routePatterns: {
+    list: "/",
+    item: "/:id",
+  },
+};</code></pre>
+
+<h2>Benefits</h2>
+<ul>
+  <li>Type-safe link generation</li>
+  <li>Centralized route management</li>
+  <li>Easy refactoring</li>
+</ul>

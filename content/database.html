@@ -1,0 +1,14 @@
+<h1>Database</h1>
+<p>This template uses Bun's built-in SQLite for data persistence.</p>
+
+<h2>Connection</h2>
+<pre><code>import { db } from "@server/db/database";
+
+const result = db.query("SELECT * FROM docs WHERE slug = ?").get(slug);</code></pre>
+
+<h2>Full-Text Search</h2>
+<p>FTS5 is configured for searching documentation content.</p>
+<pre><code>SELECT id, slug, title, rank
+FROM docs_fts
+WHERE docs_fts MATCH ?
+ORDER BY rank</code></pre>
