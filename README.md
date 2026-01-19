@@ -12,11 +12,11 @@ A starter template for building documentation web apps with Bun, Hono, HTMX, and
 
 ## GenAI Disclosure
 
-This repo is the result of many months of effort (and several structural iterations) that included significant use of Claude Code. I have reviewed all of the code in this repo and am comfortable with it - which included perfecting changes / fixes I made to code written by Claude Code.
+This repo is the result of many months of effort (and several structural iterations) that included significant use of Claude Code. I have reviewed all of the code in this repo and am comfortable with it - which included perfecting changes and adding fixes I made to code written by Claude Code.
 
 ## Usage Disclosure
 
-Please note this repo is intended as a starter kit / design example / how one might create a bun + hono + htmx application. It does not include robust security / etc. to use as a production system out of the box. The goal was to limit the number of dependencies. Besides Hono and HTMX, the only other dependency is Zod (for form input validation). Other dependencies that I might have included are Tailwind CSS, Drizzle ORM, Remark, . . .
+Please note this repo is intended as a starter kit / design example / how one might create a bun + hono + htmx application. It does not include robust security, testing, auth, etc. to use as a production system out of the box. The goal was to limit the number of dependencies. Besides Hono and HTMX, the only other dependency is Zod (for form input validation). Other dependencies that I might have included are Tailwind CSS, Drizzle ORM, Remark, . . .
 
 ## Quick Start
 
